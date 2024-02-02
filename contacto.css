@@ -1,4 +1,3 @@
-
 * {
     padding: 0;
     margin: 0;
@@ -15,6 +14,8 @@ main {
 }
 
 header {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
     background: linear-gradient(to right, blue, rgb(0, 0, 85));
     border-top: solid 1px black;
     border-right: solid 1px black;
@@ -30,44 +31,42 @@ header {
 
 h1 {
     text-shadow: 2px 2px 5px black;
-    position: absolute;
-    top: 25px;
     text-align: center;
-    font-size: 25px;
+    font-size: 27px;
     color: white;
-    width: 80%;
+    width: 75%;
+    margin-top: 22px;
 }
 
 .logo {
     position: absolute;
-    right: 5px;
+    right: 10px;
+    top: 10px;
     border: solid 1px black;
     border-radius: 50%;
-    height: 60px;
-    width: 60px;
-    margin: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    height: 65px;
+    width: 65px;
 }
 
 .buttom {
-    margin-left: 8px;
-    margin-right: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: 5px;
     text-align: center;
     text-decoration: none;
     color: white;
-    font-size: 15px;
+    font-size: 17px;
+    font-weight: 900;
 }
 
 .navegacion {
     border-bottom: solid 1px black;
     border-right: solid 1px black;
     border-left: solid 1px black;
-    padding-top: 5px;
     background: linear-gradient(to right, blue, rgb(0, 0, 85));
     text-align: right;
     width: 100%;
     height: 25px;
+    padding: 3px;
 }
 
 h2 {
@@ -75,33 +74,45 @@ h2 {
 }
 
 .contacto {
-    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    color: white;
     border: solid 2px black;
     margin: 10px;
     padding: 10px;
     width: auto;
     border-radius: 15px;
     background-color: white;
-    /* background: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)), url(img/fondo-intro.jpg); */
-    /* background-size: cover; */
+    background: linear-gradient(rgba(5, 7, 12, 0.4), rgba(5, 7, 12, 0.4)), url(img/fondo-contacto.jpg);
+    background-size: cover;
 }
 
 .container-2 a {
-    text-decoration: none;
-}
-
-footer {
-    text-align: center;
+    color: white;
 }
 
 .pie {
-    padding: 10px;
+    padding: 20px;
     background-color: rgb(20, 20, 20);
     width: 100%;
 }
 
+.izquierda {
+    float: left;
+}
+
+.derecha {
+    float: right;
+}
+
+.pie::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 .pie a {
+    font-family: 'Times New Roman', Times, serif;
     color: rgb(150, 150, 150);
     text-decoration: none;
-    margin: 10px;
 }
