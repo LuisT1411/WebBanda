@@ -102,7 +102,7 @@ h2 {
     margin-right: 15px;
 }
 
-@media screen and (max-width: 380px) {
+@media only screen and (max-width: 380px) {
     header {
         height: 65px;
     }
@@ -115,6 +115,41 @@ h2 {
     .logo {
         width: 57px;
         height: 57px;
+    }
+}
+
+@media only screen and (max-width: 325px) {
+    header {
+        height: 55px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-top: 3px;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        right: 2px;
+        top: 2px;
+    }
+
+    .titulos {
+        font-size: large;
+    }
+
+    .parrafo {
+        font-size: x-small;
+    }
+
+    .pie {
+        padding: 10px;
+    }
+
+    .pie a {
+        font-size: small;
     }
 }
 
