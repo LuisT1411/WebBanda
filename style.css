@@ -23,7 +23,7 @@ header {
     background: linear-gradient(to right, blue, rgb(0, 0, 85));
     border: solid 1px black;
     width: 100%;
-    height: 80px;
+    height: auto;
     margin-bottom: 10px;
 }
 
@@ -162,10 +162,15 @@ h1 {
     right: 5px;
 }
 
-@media screen and (max-width: 380px) {
-    header {
-        height: 65px;
+@media only screen and (min-width: 425px) {
+
+    .logo {
+        height: 70px;
+        width: 70px;
     }
+}
+
+@media screen and (max-width: 380px) {
 
     h1 {
         margin-top: 3px;
@@ -173,8 +178,8 @@ h1 {
     }
 
     .logo {
-        width: 57px;
-        height: 57px;
+        width: 55px;
+        height: 55px;
     }
 
     .intro {
@@ -186,10 +191,46 @@ h1 {
     }
 }
 
-@media only screen and (orientation: landscape) {
-    header {
-        height: 105px;
+@media only screen and (max-width: 325px) {
+
+    h1 {
+        font-size: 20px;
+        margin-top: 3px;
     }
+
+    .logo {
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        right: 2px;
+        top: 2px;
+    }
+
+    .pie {
+        padding: 10px;
+    }
+
+    .pie a {
+        font-size: small;
+    }
+
+    .izquierda {
+        margin-right: 5%;
+        margin-left: 0;
+    }
+
+    .centro {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .derecha {
+        margin-left: 5%;
+        margin-right: 0;
+    }
+}
+
+@media only screen and (orientation: landscape) {
 
     h1 {
         margin-top: 3px;
